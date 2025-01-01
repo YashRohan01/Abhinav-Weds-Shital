@@ -1,0 +1,52 @@
+/* Reset body and html styles */
+html, body {
+    height: 100%; /* Ensure the body spans the full viewport height */
+    margin: 0;
+  }
+  
+  /* Wrapper for all content */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Main content area (before the footer) */
+  .container > :not(footer) {
+    flex: 1; /* Take up remaining space between header and footer */
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #f8f9fa; /* Light grey background */
+    border-top: 1px solid #e0e0e0; /* Subtle border for separation */
+    padding: 1rem 0;
+  }
+  
+  footer p {
+    margin: 0;
+    color: #6c757d; /* Secondary text color */
+    font-size: 0.9rem;
+  }
+  
+  footer a {
+    color: #343a40; /* Darker link color */
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+  
+  footer a:hover {
+    color: #007bff; /* Link color on hover */
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  

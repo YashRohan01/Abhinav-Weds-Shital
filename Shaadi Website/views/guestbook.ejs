@@ -1,0 +1,64 @@
+<%- include("partials/header.ejs") %>
+
+<head>
+  <link rel="stylesheet" href="css/styles_guestbook.css">
+</head>
+
+<section>
+  <div class="p-5 text-center bg-body-tertiary rounded-3 jumbo">
+    <h1 class="text-body-emphasis" style="font-family: 'Pinyon Script', cursive; margin-top: 150px;font-size: 3.8rem;">
+      Dulha-Dulhan ko aashirwaad (ya taane) dene ke liye yahan Video Submit karen
+    </h1>
+    <form id="uploadForm" action="/uploadtribute" method="POST" enctype="multipart/form-data" class="form" style="margin-top: 64px;">
+      <label for="video" style="font-size: 1.5rem;font-weight: bold;">Choose a video file:</label>
+      <br>
+      <div class="input">
+        <input type="file" id="video" name="video" accept="video/*" required>
+      </div>
+      
+      <!-- Video Loading Progress Bar -->
+      <div id="loadProgressContainer" style="width: 50%; height: 4px; background-color: #f3f3f3; border-radius: 10px; margin: 20px auto; display: none;">
+        <div id="loadProgressBar" style="width: 0%; height: 100%; background-color: #d9c8b4; border-radius: 10px;"></div>
+      </div>
+
+      <!-- File Name Display (White Background) -->
+      <div id="fileNameContainer" style="width: 50%; height: 30px; background-color: white; border-radius: 10px; margin: 10px auto; padding: 5px; display: none;">
+        <span id="fileName" style="color: black;"></span>
+      </div>
+
+      <br><br>
+      <button class="btn" type="submit">Upload Video</button>
+
+      <!-- Upload Progress Bar -->
+      <div id="progressContainer" style="width: 25%; height: 4px; background-color: #f3f3f3; border-radius: 10px; margin: 20px auto; display: none;">
+        <div id="progressBar" style="width: 0%; height: 100%; background-color: #724393; border-radius: 10px;"></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="center-container">
+  <div class="guidelines">
+    <h2 class="text-body-emphasis bold center-text" style="font-size: 2.5rem;"><strong>Video Submission Guidelines :</strong></h2>
+    <ul style="margin-top: 24px; margin-left: 24px;">
+      <li><strong>Accepted Formats:</strong> MP4, MOV, AVI</li>
+      <li><strong>Max File Size:</strong> 100MB</li>
+      <li><strong>Maximum Video Length:</strong> 5 minutes</li>
+      <li><strong>Appropriate Content:</strong> Parivaar ho toh Dua karna, Dost ho toh gaali dena</li>
+      <li><strong>Prohibited Content:</strong> Dost ho toh dua karna, parivaar ho tou gaali dena (obviously)</li>
+      <li><strong>File Naming:</strong> Please name your video as 'FirstName_LastName'.</li>
+      <li><strong>How to Submit:</strong> Click 'Browse' to select your video, then click 'Upload Video' to submit it.</li>
+      <li><strong>Privacy:</strong> Your video will be stored securely and used for the event purposes only.</li>
+      <li><strong>Common Issues:</strong> If your video upload fails, please check the file size and format. (also try refreshing)</li>
+      <li><strong>Need Help?</strong> Contact us at <a href="abhinavwedsshital@gmail.com">abhinavwedsshital@gmail.com</a>.</li>
+      <li><strong>Confirmation:</strong> You will receive an alert once your video is successfully uploaded.</li>
+      <li><strong>Upload Time:</strong> The upload time may vary depending on your internet speed and the file size.</li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+<%- include("partials/footer.ejs") %>

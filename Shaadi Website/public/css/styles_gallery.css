@@ -1,0 +1,85 @@
+body {
+    background: linear-gradient(to bottom, #724393, #d9c8b4);
+    min-height: 100vh; /* Ensure body fills the full screen height */
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+.jumbo {
+    background: transparent !important;
+}
+
+.form {
+    margin-top: 36px;
+}
+
+.input {
+    width: 66%; /* Reduce the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Align the content inside the container */
+    margin-top: 32px;
+}
+
+.input input[type="file"] {
+    width: 100%; /* Make the input fill the container's width */
+    padding: 8px; /* Add padding to make it look better */
+    box-sizing: border-box; /* Ensure padding doesn't increase the width */
+    background-color: #f3f3f3; /* Optional: background color for input */
+    border-radius: 5px; /* Optional: rounded corners for the input */
+    font-size: 1.5rem;
+}
+
+.btn {
+    border-radius: 16px;
+    background-color: #B8A9D3;
+    padding: 0.5rem 1rem; /* Increase padding for a larger button */
+    font-size: 1.5rem; /* Increase the font size */
+    border: none; /* Optional: remove border */
+    display: inline-block; /* Ensure proper button rendering */
+    text-align: center; /* Center the text */
+}
+
+#myCarousel {
+    margin-top: 64px;
+    max-height: 500px; /* Reduce the height of the carousel */
+    border-radius: 32px; /* Add rounded corners to the carousel */
+    overflow: hidden; /* Prevent the images from overflowing the rounded corners */
+    width: 90%;
+}
+.carousel-container {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner img {
+    width: 100%; /* Ensures the image spans the full width of the carousel */
+    height: auto; /* Maintains the aspect ratio of the image */
+    object-fit: cover; /* Ensures the image covers the carousel without distortion */
+    max-height: 500px; /* Adjust the height of the carousel images */
+}
+
+/* Optional: You can also add a transparent background to the carousel if needed */
+.carousel-item {
+    background: transparent;
+}
+
+.carousel-caption.top-center {
+    top: 10%; /* Adjust the value as needed to position it */
+    bottom: auto; /* Override the default bottom positioning */
+    transform: translateY(0); /* Ensure proper alignment */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.carousel-caption.left-shift {
+    left: -10%; /* Adjust the value to control the horizontal shift */
+    transform: translateX(0); /* Ensure it doesn't center again */
+}

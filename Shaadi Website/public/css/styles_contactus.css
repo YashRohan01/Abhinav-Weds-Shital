@@ -1,0 +1,123 @@
+/* Body styles */
+body {
+    background: #d9c8b4; /* Background color matching your theme */
+    min-height: 100vh; /* Ensure the background covers the entire viewport */
+    font-family: Arial, sans-serif; /* Default font for the page */
+}
+
+/* Jumbo section styles */
+.jumbo {
+    background: linear-gradient(to bottom, #724393, #d9c8b4); /* Gradient background */
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.jumbo h1 {
+    font-size: 3.5rem; /* Increase main heading size */
+    margin-bottom: 2rem; /* Add spacing below the main heading */
+}
+
+.jumbo h3 {
+    font-size: 2rem; /* Increase subheading size */
+    margin-bottom: 1.5rem; /* Add spacing below the subheading */
+}
+
+.jumbo .row h5 {
+    font-size: 1.5rem; /* Increase contact titles size */
+    margin-bottom: 0.5rem; /* Space below the title */
+}
+
+.jumbo .row p {
+    font-size: 1.2rem; /* Increase the font size for contact details */
+}
+
+
+/* Header styles */
+h1 {
+    color: #d9c8b4; /* Text color for the main heading */
+    font-family: 'Pinyon Script', cursive; /* Custom font */
+    font-size: 3rem; /* Size of the heading */
+    margin-bottom: 40px;
+}
+
+/* Subheading and text styles */
+h3 {
+    color: #d9c8b4; /* Text color for the subheading */
+    font-family: 'Pinyon Script', cursive; /* Custom font */
+    font-size: 2rem; /* Size of the subheading */
+}
+
+/* Column styling in contact section */
+.container {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    padding: 40px;
+    border-radius: 15px; /* Rounded corners */
+    color: #d9c8b4; /* Text color */
+}
+
+/* Contact details styling */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-md-6 {
+    flex: 1 1 45%; /* Adjust column width for medium screens */
+    margin-bottom: 20px;
+}
+
+/* Contact number styling */
+h5 {
+    font-size: 1.2rem; /* Make contact title bold */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p a {
+    color: #d9c8b4;
+    text-decoration: none;
+    font-size: 1rem; /* Increase font size for readability */
+}
+
+p a:hover {
+    color: #724393; /* Change color on hover */
+}
+
+/* Optional contact form styling (if added later) */
+form {
+    margin-top: 20px;
+}
+
+form .form-label {
+    color: #d9c8b4; /* Label color */
+    font-size: 1.1rem; /* Slightly larger font size */
+}
+
+form .form-control {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #724393;
+}
+
+form button {
+    background-color: #724393;
+    color: #d9c8b4;
+    border-radius: 16px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+form button:hover {
+    background-color: #d9c8b4;
+    color: #724393;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .col-md-6 {
+        flex: 1 1 100%; /* Stack columns on small screens (100% width) */
+    }
+}

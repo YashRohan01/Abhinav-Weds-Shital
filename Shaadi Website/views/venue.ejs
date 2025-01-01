@@ -1,0 +1,127 @@
+<%- include("partials/header.ejs") %>
+<!--------------------------------------------------------------------------------------------->
+
+<head>
+  <link rel="stylesheet" href="css/styles_venue.css">
+</head>
+
+<!--------------------------------------------------------------------------------------------->
+<section>
+  <div class="p-5 text-center bg-body-tertiary rounded-3 jumbo">
+    <a href="https://www.grandbeachresorts.in/" style="text-decoration: none; color: black; display: inline-flex; align-items: center;">
+      <h1 class="fw-bold text-body-emphasis" style="font-family: 'Pinyon Script', cursive; color: #d9c8b4 !important; font-size: 6.6rem; margin-top: 16px;">Grand Beach Resort</h1>
+      <span style="margin-left: 35px;margin-bottom: 30px; color: wheat;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+        </svg>
+      </span>
+    </a>    
+
+    <!-- Container for image and map -->
+    <div class="row" style="display: flex; align-items: center; justify-content: center; margin-top: 24px; height: 300; width: 300;">
+      <!-- Image Section -->
+      <div class="col-md-6" style="text-align: center; padding-right: 20px;">
+        <a href="https://www.grandbeachresorts.in/" target="_blank">
+          <img src="images/hotel.jpg" alt="Grand Beach Resort" style="max-width: 100%; height: auto; border-radius: 32px;">
+        </a>
+      </div>
+
+      <!-- Map Section -->
+      <div class="col-md-6" style="border-radius: 32px;">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.5242937588478!2d87.65524449473483!3d21.652187346107805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a032f0f2aba1ac5%3A0x8243e23f118b3a25!2sGRAND%20BEACH%20RESORT!5e0!3m2!1sen!2sin!4v1734770918299!5m2!1sen!2sin" 
+          width="400" 
+          height="270" 
+          style="border:0; border-radius: 32px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+    
+    <p class="col-lg-8 mx-auto fs-5 text-muted" style="margin-top: 32px; color: white; font-size: 1.4rem !important;">
+      <u>
+      Venue Beachside hai aur pura resort apna hai!! 
+      </u>
+    </p>
+    <div class="d-inline-flex gap-2 mb-5">
+    </div>
+  </div>
+</section>
+
+
+<!--------------------------------------------------------------------------------------------->
+
+<section>
+  <h1 class="tb" style="font-family: 'Pinyon Script', cursive; font-size: 5rem; font-weight: bold;">Mandrmani Kaise Pahuche?</h1>
+  <table>
+    <caption style="font-size: large;">'Daba' ke book kare</caption>
+    <thead>
+      <tr>
+        <th>From</th>
+        <th>Mode</th>
+        <th>Details</th>
+        <th>Approx. Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr onclick="window.location.href='https://www.bharattaxi.com/';">
+        <td>Kolkata</td>
+        <td>Car/Taxi</td>
+        <td>Direct via NH16, SH4</td>
+        <td>3.5–4 hours</td>
+      </tr>
+      <tr onclick="window.location.href='https://www.makemytrip.com/railways/listing?date=20241224&srcStn=HWH&srcCity=Howrah&destStn=DGHA&destCity=Digha&classCode=';">
+        <td>Kolkata</td>
+        <td>Train + Local</td>
+        <td>Train to Contai/Digha, then taxi</td>
+        <td>4–4.5 hours</td>
+      </tr>
+      <tr onclick="window.location.href='https://www.makemytrip.com/bus/search/Kolkata/Digha/19-02-2025?from_code=MMTCC6117&to_code=MMTCC5569';">
+        <td>Kolkata</td>
+        <td>Bus + Local</td>
+        <td>Bus to Chawlkhola, then rickshaw</td>
+        <td>4–4.5 hours</td>
+      </tr>
+      <tr onclick="window.location.href='https://www.google.com/search?client=firefox-b-d&q=kharagpur+cab+services&lqi=ChZraGFyYWdwdXIgY2FiIHNlcnZpY2VzSLG-ntCLtoCACFoiEAEQAhgAGAEYAiIWa2hhcmFncHVyIGNhYiBzZXJ2aWNlc5IBE2Nhcl9sZWFzaW5nX3NlcnZpY2WqAVsKCC9tLzBwZzUyEAEqECIMY2FiIHNlcnZpY2VzKAAyHxABIhtT10jHXeqrY_PQgLlOzEgTvcR1yPRCVNuKCKwyGhACIhZraGFyYWdwdXIgY2FiIHNlcnZpY2Vz#rlimm=7401989295853272978';">
+        <td>Kharagpur</td>
+        <td>Car/Taxi</td>
+        <td>Direct via NH116B, SH4</td>
+        <td>2.5 hours</td>
+      </tr>
+      <tr onclick="window.location.href='https://www.makemytrip.com/railways/listing?date=20250219&srcStn=KGP&srcCity=Kharagpur&destStn=DGHA&destCity=Digha&classCode=';">
+        <td>Kharagpur</td>
+        <td>Train + Local</td>
+        <td>Train to Contai/Digha, then taxi</td>
+        <td>3–3.5 hours</td>
+      </tr>
+      <tr onclick="window.location.href='https://www.google.com/search?client=firefox-b-d&q=digha+cab+services&lqi=ChJkaWdoYSBjYWIgc2VydmljZXNIjLnV7bGygIAIWh4QARACGAAYARgCIhJkaWdoYSBjYWIgc2VydmljZXOSARNjYXJfbGVhc2luZ19zZXJ2aWNlqgFWCggvbS8wcGc1MhABKhAiDGNhYiBzZXJ2aWNlcygAMh4QASIaVKh58514H2ITk9yhVjgEsIF1F5O7wKVpEgoyFhACIhJkaWdoYSBjYWIgc2VydmljZXM#rlimm=16196989819578925050';">
+        <td>Digha</td>
+        <td>Car/Taxi</td>
+        <td>Direct via SH4</td>
+        <td>1–1.5 hours</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!--------------------------------------------------------------------------------------------->
+
+<section style="display: flex; justify-content: center; margin-top: 50px;">
+  <a href="https://www.makemytrip.com/" style="text-decoration: none;">
+    <button class="btn fw-bold ">
+      19<sup>th</sup> ko 11 baje se pehle pahuchna hai..., tickets lelo
+      <span style="margin-left: 35px;margin-bottom: 30px; color: #d9c8b4;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707z"/>
+        </svg>
+      </span>
+    </button>
+  </a>
+</section>
+
+
+<!--------------------------------------------------------------------------------------------->
+
+</body>

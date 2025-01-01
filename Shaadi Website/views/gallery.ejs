@@ -1,0 +1,171 @@
+<%- include("partials/header.ejs") %>
+
+<!-------------------------------------------------------------------------------------------------------->
+
+<head>
+    <link rel="stylesheet" href="css/styles_gallery.css">
+</head>
+
+<!-------------------------------------------------------------------------------------------------------->
+
+<section>
+    <div class="p-5 text-center bg-body-tertiary rounded-3 jumbo">
+      <h1 class="text-body-emphasis" style="font-family: 'Pinyon Script', cursive; margin-top: 16px;font-size: 4.5rem;">
+        Shaadi ki saari acchi buri yaadon ko ek jagah submit kare...
+      </h1>
+      <form id="uploadForm" action="/uploadgallery" method="POST" enctype="multipart/form-data" class="form" style="margin-top: 32px;">
+        
+        <label for="media" style="font-weight: bold;margin-top: 64px; font-size: 1.5rem;">Choose a video or photo file:</label>
+        <br>
+        <div class="input">
+          <input type="file" id="media" name="media" accept="image/*,video/*" required>
+        </div>
+        
+        <!-- Video/Photo Loading Progress Bar -->
+        <div id="loadProgressContainer" style="width: 50%; height: 4px; background-color: #f3f3f3; border-radius: 10px; margin: 20px auto; display: none;">
+          <div id="loadProgressBar" style="width: 0%; height: 100%; background-color: #d9c8b4; border-radius: 10px;"></div>
+        </div>
+  
+        <!-- File Name Display (White Background) -->
+        <div id="fileNameContainer" style="width: 50%; height: 30px; background-color: white; border-radius: 10px; margin: 10px auto; padding: 5px; display: none;">
+          <span id="fileName" style="color: black;"></span>
+        </div>
+  
+        <br><br>
+        <button class="btn" type="submit">Upload Media</button>
+  
+        <!-- Upload Progress Bar -->
+        <div id="progressContainer" style="width: 25%; height: 4px; background-color: #f3f3f3; border-radius: 10px; margin: 20px auto; display: none;">
+          <div id="progressBar" style="width: 0%; height: 100%; background-color: #724393; border-radius: 10px;"></div>
+        </div>
+      </form>
+    </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------->
+
+<section>
+  <div class="carousel-container">
+    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" style="margin-top: 128px; background: transparent;">
+      <!-- Indicators -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" class="active" aria-current="true" aria-label="Slide 8"></button>
+      </div>
+
+      <!-- Carousel Items -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/sshadi.jpg" class="d-block w-100" alt="All Images">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>All Images</h1>
+              <p><a class="btn btn-lg btn-primary" href="/all_images">View</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/mehendi.jpeg" class="d-block w-100" alt="Mehendi">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1>Mehendi</h1>
+              <p class="opacity-75">19<sup>th</sup></p>
+              <p><a class="btn btn-lg btn-primary" href="/mehendi">View</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/hotel.jpg" class="d-block w-100" alt="Haldi">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Pool Party</h1>
+              <p>19<sup>th</sup></p>
+              <p><a class="btn btn-lg btn-primary" href="/pool_party">View</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/ssangeet.webp" class="d-block w-100" alt="Sangeet">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Sangeet</h1>
+              <p>19<sup>th</sup></p>
+              <p><a class="btn btn-lg btn-primary" href="/sangeet">View</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/BachelorParty.png" class="d-block w-100" alt="Shaadi">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1 style="color: #836246;">Bachelor Party</h1>
+              <p>19<sup>th</sup></p>
+              <p><a class="btn btn-lg btn-primary" href="/bachelor_party">View</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/beachHang.jpg" class="d-block w-100" alt="Beach Hangout">
+          <div class="container">
+            <div class="carousel-caption text-center top-center">
+              <h1 style="color: black;">Beach Hangout</h1>
+              <p class="opacity-75" style="color: black;">20<sup>th</sup></p>
+              <p><a class="btn btn-lg btn-primary" href="/beach">View</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/hhaldi.jpg" class="d-block w-100" alt="Haldi">
+          <div class="container">
+            <div class="carousel-caption text-center" style="bottom: 20%;">
+              <h1>Haldi</h1>
+              <p class="opacity-75">20<sup>th</sup></p>
+              <p><a class="btn btn-lg btn-primary" href="/haldi">View</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/Jaimala.webp" class="d-block w-100" alt="Jaimala">
+          <div class="container">
+            <div class="carousel-caption text-center left-shift" style="bottom: 20%;">
+              <h1 style="color: #836246;">Jaimala</h1>
+              <p class="opacity-75">20<sup>th</sup></p>
+              <p><a class="btn btn-lg btn-primary" href="/jaimala">View</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-------------------------------------------------------------------------------------------------------->
+  
+
+  <script src="load_media.js"></script>
+  <%- include("partials/footer.ejs") %>

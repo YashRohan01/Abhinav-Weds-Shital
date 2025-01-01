@@ -1,0 +1,72 @@
+body {
+    margin-top: 128px; /* Equal to the height of your navbar */
+    padding: 0; /* Ensure no extra padding */
+}
+
+.navbar-brand {
+    font-size: 2.4rem; /* Adjust font size as needed */
+    font-family: 'Pinyon Script', cursive; /* Ensure the correct font is applied */
+    font-weight: bold; /* Optional: Make the text bold */
+  }
+
+.navbar-pic{
+    border-radius: 50%;
+    height: 64px;
+    width: 64px;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background: white !important;
+    height: 128px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: white !important;
+}
+  
+
+.pinyon {
+    font-family: 'Pinyon Script', cursive;
+    font-size: rem;
+    color: #6A2C70 !important;
+}
+
+.dropdown-menu {
+    background-color: white; /* Set a white background */
+    border: 1px solid #d9c8b4; /* Optional: Add a border for better visibility */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+    width: 100%;
+}
+
+.dropdown-item {
+    color: #6A2C70 !important; /* Set the text color */
+    font-weight: bold; /* Make the text bold */
+    font-size: 2rem !important;
+}
+
+.dropdown-item:hover {
+    background-color: #f8f9fa; /* Optional: Add a hover effect */
+    color: #4d2b69; /* Change text color on hover */
+}
+
+.navbar-collapse {
+    background-color: white; /* Set background color for the collapsible area */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    padding: 10px; /* Optional: Add padding inside the collapsible area */
+}
+
+.navbar-toggler{
+    background-color: #B8A9D3 !important;
+    border-color: #6A2C70 !important;
+    border-radius: 10px !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23000000' stroke-width='2' stroke-linecap='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    border-radius: 5px; /* Slightly round the inner icon */
+}

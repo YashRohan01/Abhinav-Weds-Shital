@@ -1,0 +1,76 @@
+html, body {
+    height: 100%; /* Ensure the body spans the full height of the page */
+    margin: 0; /* Remove default margins */
+    padding: 0; /* Remove default padding */
+}
+
+body {
+    background: linear-gradient(to bottom, #724393, #d9c8b4);
+    background-attachment: fixed; /* Ensure the gradient stays fixed while scrolling */
+    background-size: cover; /* Cover the entire viewport */
+}
+
+#rsvpForm {
+  max-width: 500px; /* Increase the maximum width */
+  margin: 30px auto; /* Add a bit more vertical spacing */
+  padding: 40px; /* Increase padding for a more spacious feel */
+  background-color: #f8f9fa; /* Keep the background color */
+  border: 1px solid #dee2e6; /* Border remains the same */
+  border-radius: 12px; /* Slightly increase border radius for smoother corners */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow for depth */
+  font-family: Arial, sans-serif;
+  font-size: 1.2rem; /* Increase font size for readability */
+  line-height: 1.6; /* Adjust line height for better spacing */
+}
+
+  /* Form fields */
+  #rsvpForm div {
+    margin-bottom: 15px;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #495057;
+  }
+
+  input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* Submit button */
+  button[type="submit"] {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+
+  /* Success message */
+  #successMessage {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 10px;
+  }

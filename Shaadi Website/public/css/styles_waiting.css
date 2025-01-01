@@ -1,0 +1,18 @@
+body {
+    background: linear-gradient(to bottom, #724393, #d9c8b4);
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Ensures a consistent gradient on scroll */
+    background-size: cover; /* Ensures the gradient covers the entire viewport */
+}
+
+.center-section {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Centers content horizontally */
+    height: 100vh; /* Makes the section take up the full viewport height */
+    text-align: center; /* Ensures text alignment */
+    margin-top: 128px;
+    padding-top: 512px;
+    font-size: 8rem !important; /* Increased font size */
+    font-family: 'Pinyon Script', cursive;
+    color: white;
+}

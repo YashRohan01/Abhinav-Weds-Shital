@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('/images/card_4.jpg'); /* Replace with your image path */
+  background-size: cover;          /* Ensures the image covers the entire viewport */
+  background-position: center;     /* Centers the image */
+  background-repeat: no-repeat;    /* Prevents the image from repeating */
+  height: 100vh;                   /* Sets the height to the full viewport */
+  display: flex;                   /* Centers the form */
+  justify-content: center;
+  align-items: center;
+  border: #0000;
+  overflow: hidden;
+}
+
+
+.authentication_form {
+  display: flex;
+  justify-content: center; /* Centers the form horizontally */
+  align-items: center;     /* Centers the form vertically */
+  min-height: 100vh;       /* Full height of the viewport */
+  margin-top: -500px;       /* Moves the form 80px up */
+  margin-left: 350px;      /* Moves the form 450px to the right */
+  font-size: 1.2rem;       /* Increases the font size of the entire form (adjust as needed) */
+  transform: scale(1.75);   /* Scales the entire div, including fonts and spacing */
+}
+  
+  .form-control {
+    background-color: #e1dfdd; 
+    border-color: transparent;     
+    color: #000000;
+    margin-bottom: 20px;            /* Black text */
+  }
+  
+  .form-control:focus {
+    background-color: #cebcac; 
+    border-color: transparent;     /* Dodger blue border */
+    outline: none;
+    box-shadow: 0 0 5px #0000;
+  }
+  
+  .pinyon {
+    font-family: 'Pinyon Script', cursive;
+    font-size: 3.5rem;
+  }
+  
+  .btn-outline-secondary {
+    background-color: #53317a;
+    border-color: #0000;
+    border-radius: 32px;
+    color: #e1dfdd;
+  }
+  
+  .btn-primary{
+    background-color: #53317a;
+    border-color: #0000;
+    border-radius: 32px;
+    color: #e1dfdd;
+  }
+  
+  
+  
+  

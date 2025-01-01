@@ -1,0 +1,92 @@
+<%- include('partials/header.ejs') %>
+
+<!------------------------------------------------------------------------>
+
+<head>
+    <link rel="stylesheet" href="css/styles_contactus.css">
+</head>
+
+<!------------------------------------------------------------------------>
+
+<section>
+    <div class="p-5 text-center bg-body-tertiary rounded-3 jumbo">
+      <h1 class="fw-bold text-body-emphasis" style="font-family: 'Pinyon Script', cursive; color: #d9c8b4 !important; font-size: 4rem; margin: 0;">Contact Us</h1>
+  
+      <div class="container mt-4">
+        <h3 class="text-white mb-4" style="font-size: 2.5rem;">Reach out to us!</h3>
+  
+        <div class="row text-white">
+          <!-- Dulha Contact -->
+          <div class="col-md-6 mb-4">
+            <h5>Dulha Contact</h5>
+            <p >Phone: <a href="tel:+91 7903520793" style="color: #d9c8b4; font-size: 1.2rem;">+91 7903520793</a></p>
+          </div>
+  
+          <!-- Dulhan Contact -->
+          <div class="col-md-6 mb-4">
+            <h5>Dulhan Contact</h5>
+            <p>Phone: <a href="tel:+91 7858087621" style="color: #d9c8b4; font-size: 1.2rem;">+91 7858087621</a></p>
+          </div>
+  
+          <!-- Dulha Papa Contact -->
+          <div class="col-md-6 mb-4">
+            <h5>Dulha Papa Contact</h5>
+            <p>Phone: <a href="tel:+91 9431114110" style="color: #d9c8b4; font-size: 1.2rem;">+91 9431114110</a></p>
+          </div>
+  
+          <!-- Dulha Mumma Contact -->
+          <div class="col-md-6 mb-4">
+            <h5>Dulha Mummy Contact</h5>
+            <p>Phone: <a href="tel:+91 7903531890" style="color: #d9c8b4; font-size: 1.2rem;">+91 7903531890</a></p>
+          </div>
+  
+          <!-- Dulhan Mumma Contact -->
+          <div class="col-md-6 mb-4">
+            <h5>Dulhan Mummy Contact</h5>
+            <p>Phone: <a href="tel:+1234567890" style="color: #d9c8b4; font-size: 1.2rem;">+91 8210178826</a></p>
+          </div>
+  
+          <!-- Hotel Contact -->
+          <div class="col-md-6 mb-4">
+            <h5>Hotel Contact</h5>
+            <p>Phone: <a href="tel:+91 9064000368" style="color: #d9c8b4; font-size: 1.2rem;">+91 9064000368</a></p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <h5>Mail us at</h5>
+            <p>email: <a href="mailto:abhinavwedsshital@gmail.com" style="color: #d9c8b4;font-size: 1.2rem;">abhinavwedsshital@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Contact Form Section -->
+  <section>
+    <div class="container mt-4">
+      <h3 class="text-white mb-4" style="font-size: 2.5rem;">Send us a message</h3>
+      
+      <div class="row">
+        <div class="col-md-12">
+          <form action="/submit" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Your Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Your Email</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<%- include('partials/footer.ejs') %>

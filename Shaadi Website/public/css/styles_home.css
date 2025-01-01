@@ -1,0 +1,63 @@
+body {
+    background-color: #d9c8b4;
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding (if any) */
+}
+
+
+.hero {
+    background: linear-gradient(to bottom, #724393, #d9c8b4); /* Creates the gradient */
+    margin-top: 100px; /* Ensure no margin around the hero */
+    position: relative; /* Ensure the section starts at the very top */
+    color: #FFFFFF; /* Optional: Ensures text is readable over the gradient */
+}
+.hero .container {
+    padding: 20px;
+}
+
+
+.profile-pic{
+    border-radius: 50%;
+}
+
+#Our-Story{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+
+#Events {
+  padding: 50px 20px; /* Add padding around the section for spacing */
+  margin-bottom: 32px;
+}
+
+.timeline {
+  max-width: 1000px; /* Increase the width of the timeline */
+  padding: 40px 20px; /* Add padding inside the timeline */
+  border-left: 6px solid #724393; /* Slightly thicker vertical line */
+}
+
+.timeline-item {
+  margin-bottom: 40px; /* Increase spacing between timeline items */
+  padding-left: 30px; /* Add padding for the items */
+}
+
+.timeline-content {
+  font-size: 2rem; /* Increase font size of timeline content */
+  background-color: #f8f9fa;
+  border: 2px solid #d9c8b4; /* Thicker border for better visibility */
+  border-radius: 32px; /* Rounded corners */
+  padding: 20px; /* Add padding inside the content boxes */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1); /* Slightly deeper shadow */
+}
+
+.timeline-content h5 {
+  font-size: 2.5rem; /* Increase font size for headings */
+  margin-bottom: 10px; /* Add spacing below headings */
+  color: #4d2b69; /* Maintain consistent color */
+}
+
+.timeline-content p {
+  font-size: 1.5rem; /* Slightly larger text for descriptions */
+  color: #5C5C5C; /* Maintain text color */
+}

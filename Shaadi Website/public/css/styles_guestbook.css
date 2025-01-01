@@ -1,0 +1,56 @@
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #724393, #d9c8b4);
+    background-attachment: fixed; /* Ensures the gradient stays fixed when scrolling */
+}
+
+.jumbo{
+    background: linear-gradient(to bottom, #724393, #96719f);
+}
+
+.form{
+    margin-top: 36px;
+}
+
+.input {
+    width: 66%; /* Reduce the width of the container */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: center; /* Align the content inside the container */
+    margin-top: 32px;
+    border-radius: 32px;
+  }
+  
+  .input input[type="file"] {
+    width: 100%; /* Make the input fill the container's width */
+    padding: 10px; /* Add padding to make it look better */
+    box-sizing: border-box; /* Ensure padding doesn't increase the width */
+    background-color: #f3f3f3; /* Optional: background color for input */
+    border-radius: 10px; /* Optional: rounded corners for the input */
+}
+
+.btn{
+    border-radius: 10px;
+    background-color: #B8A9D3;
+}
+
+.center-text {
+    text-align: center; /* Horizontally centers the text */
+    margin-top: 128px; /* Add the vertical margin */
+  }
+
+  .guidelines {
+    width: 90%; /* Increase the width of the container */
+    max-width: 1000px; /* Set a larger maximum width */
+    padding: 40px; /* Add padding for spacing inside the div */
+    font-size: 1.7rem; /* Increase font size for better readability */
+    line-height: 2; /* Improve line spacing */
+    margin: 20px auto; /* Add spacing above and below the container */
+}

@@ -1,0 +1,62 @@
+body {
+    background: #d9c8b4;
+    min-height: 100vh;  /* Ensure the background covers the entire viewport */
+    padding-bottom: 32px;
+}
+
+.jumbo{
+    background: linear-gradient(to bottom, #724393, #d9c8b4);
+}
+
+.no-underline {
+    text-decoration: none;
+  }
+
+.btn{
+    padding: 10px 20px; 
+    font-size: 1.5rem; 
+    background-color: #724393; 
+    color: #d9c8b4; 
+    border: none; 
+    border-radius: 16px; 
+    cursor: pointer;
+    text-decoration: none;
+    height: 4rem;
+}
+
+.tb {
+    text-align: center; /* Horizontally center the text */
+    font-family: 'Pinyon Script', cursive; /* Apply the custom font */
+    margin: 0 auto; /* Center the element within its container */
+    font-size: 40px;
+}
+
+table {
+    width: 90%;
+    height: 90px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    background-color: transparent; /* Make the background transparent */
+    font-size: 24px; /* Increase font size for better readability */
+  }
+  
+  th, td {
+    border: 1px solid black; /* Border matching your color scheme */
+    padding: 12px; /* Add padding for better spacing */
+    text-align: left;
+    color: black; /* Font color matching your scheme */
+  }
+  
+  th {
+    background-color: #724393; /* Header background */
+    color: #d9c8b4; /* Header text color */
+  }
+  
+  tr:nth-child(even) {
+    background-color: rgba(114, 67, 147, 0.1); /* Subtle highlight for even rows */
+  }
+  
+  tr:hover {
+    background-color: rgba(114, 67, 147, 0.2); /* Highlight row on hover */
+    cursor: pointer; /* Pointer cursor for interactivity */
+  }
